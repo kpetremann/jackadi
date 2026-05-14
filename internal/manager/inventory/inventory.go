@@ -297,6 +297,7 @@ func (n *Nodes) MarkNodeActive(id node.ID) {
 	state, ok := n.registry.States[id]
 	if !ok {
 		n.registry.States[id] = NewNodeState()
+		state = n.registry.States[id]
 	}
 
 	state.LastMsg = time.Now()
@@ -310,6 +311,7 @@ func (n *Nodes) MarkNodeStateChange(id node.ID, connected bool) {
 	state, ok := n.registry.States[id]
 	if !ok {
 		n.registry.States[id] = NewNodeState()
+		state = n.registry.States[id]
 	}
 
 	state.Connected = connected
