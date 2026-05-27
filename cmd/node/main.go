@@ -103,7 +103,7 @@ func run(cfg nodeConfig) error {
 					continue
 				case <-ctx.Done():
 					slog.Debug("context shutdown", "component", "main", "step", "wait before retrying handshake")
-					break
+					return
 				}
 			}
 			slog.Debug("handshake with manager successful")
@@ -112,7 +112,7 @@ func run(cfg nodeConfig) error {
 			if err := client.ListenTaskRequest(ctx); err != nil {
 				if status.Code(err) == codes.Canceled {
 					slog.Info("closing task listener")
-					break
+					return
 				}
 				slog.Error(
 					"connection to the manager failed",
