@@ -113,13 +113,15 @@ func (a *apiServer) RemoveNode(ctx context.Context, req *proto.NodeRequest) (*pr
 	for _, nd := range nodes {
 		if err := a.server.RequestShutdown(nd.ID); err != nil {
 			slog.Info("cannot shutdown connection with node", "error", err)
+			errs = errors.Join(errs, err)
+			// CONTINUE?
 		}
 
 		if err := a.server.GetInventory().Remove(nd); err != nil {
 			slog.Info("cannot unregister", "error", err)
-			if joinErr := errors.Join(errs, err); joinErr != nil {
-				return nil, err
-			}
+			errs = errors.Join(errs, err)
+		} else {
+			removed = append(removed, nd)
 		}
 	}
 
@@ -146,13 +148,16 @@ func (a *apiServer) RejectNode(ctx context.Context, req *proto.NodeRequest) (*pr
 	rejected := []inventory.NodeIdentity{}
 	for _, nd := range nodes {
 		if a.server.GetInventory().IsRegistered(nd) {
-			err := a.server.RequestShutdown(nd.ID)
-			slog.Info("cannot reject because cannot shutdown connection with node", "error", err)
+			if err := a.server.RequestShutdown(nd.ID); err != nil {
+				errs = errors.Join(errs, err)
+				slog.Info("cannot shutdown connection with node", "error", err)
+				continue
+			}
 		}
 		if err := a.server.GetInventory().Reject(nd); err != nil {
-			if joinErr := errors.Join(errs, err); joinErr != nil {
-				return nil, err
-			}
+			errs = errors.Join(errs, err)
+			slog.Info("cannot reject node", "error", err)
+			continue
 		}
 		rejected = append(rejected, nd)
 	}
