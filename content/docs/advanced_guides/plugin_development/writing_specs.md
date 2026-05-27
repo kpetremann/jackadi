@@ -35,7 +35,7 @@ import (
 	"context"
 	"runtime"
 	"os"
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 type SystemInfo struct {

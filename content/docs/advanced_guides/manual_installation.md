@@ -46,7 +46,7 @@ To build Jackadi from source, you need Go 1.24 or later:
 
 ```sh
 # Clone the repository
-git clone https://github.com/jackadi-io/jackadi.git
+git clone https://github.com/kpetremann/jackadi.git
 cd jackadi
 
 # Build the components

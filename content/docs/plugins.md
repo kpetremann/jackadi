@@ -31,7 +31,7 @@ Example of a plugin serving one plugin which has one task:
 ```go {filename="demo.go"}
 package main
 
-import "github.com/jackadi-io/jackadi/sdk"
+import "github.com/kpetremann/jackadi/sdk"
 
 func Hello() (string, error){
 	return "hello world!", nil
@@ -64,7 +64,7 @@ Their signature is similar to tasks:
 ```go {filename="demo.go"}
 package main
 
-import "github.com/jackadi-io/jackadi/sdk"
+import "github.com/kpetremann/jackadi/sdk"
 
 func SystemInfoCollector() (map[string]string, error){
 	info := map[string]string{

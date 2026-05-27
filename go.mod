@@ -1,4 +1,4 @@
-module github.com/jackadi-io/jackadi-doc
+module github.com/kpetremann/jackadi-doc
 
 go 1.25.1
 

@@ -77,7 +77,7 @@ jack run node1 cmd.run "echo hello"
 ```go {filename=tour.go}
 package main
 
-import "github.com/jackadi-io/jackadi/sdk"
+import "github.com/kpetremann/jackadi/sdk"
 
 func Hello(name string) (string, error) {
 	return fmt.Sprintf("Hello %s!", name), nil

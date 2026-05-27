@@ -39,11 +39,11 @@ Components:
 
 ## Writing a task
 
-1. Import `github.com/jackadi-io/jackadi/sdk`:
+1. Import `github.com/kpetremann/jackadi/sdk`:
 ```go
 package main
 
-import "github.com/jackadi-io/jackadi/sdk"
+import "github.com/kpetremann/jackadi/sdk"
 ````
 2. If needed, define `Options` implementing `sdk.Options`:
 ```go
@@ -91,7 +91,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 // Define an options structure

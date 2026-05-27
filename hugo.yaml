@@ -53,6 +53,6 @@ menu:
         label: false
     - name: GitHub
       weight: 99
-      url: "https://github.com/jackadi-io/jackadi"
+      url: "https://github.com/kpetremann/jackadi"
       params:
         icon: github

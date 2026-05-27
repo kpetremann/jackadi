@@ -5,7 +5,7 @@ weight: 2
 
 ## Linux packages (recommended)
 
-1. Download and install Jackadi. Installation files (`.deb` and `.rpm`) are available in the [GitHub releases](https://github.com/jackadi-io/jackadi/releases).
+1. Download and install Jackadi. Installation files (`.deb` and `.rpm`) are available in the [GitHub releases](https://github.com/kpetremann/jackadi/releases).
 2. Edit the configuration (see [Configuration](/docs/configuration) page).
 3. Start the service and ensure it is running:
 ```sh
@@ -30,13 +30,13 @@ More details can be found in [Manual installation guide](/docs/advanced_guides/m
 
 ### Install binaries
 
-All the binaries can be found in [GitHub releases](https://github.com/jackadi-io/jackadi/releases).
+All the binaries can be found in [GitHub releases](https://github.com/kpetremann/jackadi/releases).
 
 ### Install from source
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/jackadi-io/jackadi.git && cd jackadi
+git clone https://github.com/kpetremann/jackadi.git && cd jackadi
 ```
 2. Run the build:
 ```sh

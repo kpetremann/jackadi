@@ -35,7 +35,7 @@ import (
 	"context"
 	"fmt"
 	"runtime"
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 // Task options structure
