@@ -116,7 +116,7 @@ func (s *GRPCServer) Version(ctx context.Context, req *empty.Empty) (*protoplugi
 	out, err := s.Impl.Version()
 	return &protoplugin.VersionResponse{
 		PluginVersion: out.PluginVersion,
-		Commit:        out.PluginVersion,
+		Commit:        out.Commit,
 		BuildTime:     out.BuildTime,
 		GoVersion:     out.GoVersion,
 	}, err
