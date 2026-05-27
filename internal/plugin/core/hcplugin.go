@@ -4,7 +4,7 @@ import (
 	"context"
 
 	goplugin "github.com/hashicorp/go-plugin"
-	"github.com/jackadi-io/jackadi/internal/plugin/core/protoplugin"
+	"github.com/kpetremann/jackadi/internal/plugin/core/protoplugin"
 	"google.golang.org/grpc"
 )
 

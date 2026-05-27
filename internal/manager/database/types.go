@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/proto"
 )
 
 const (

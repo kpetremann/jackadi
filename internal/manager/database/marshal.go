@@ -3,8 +3,8 @@ package database
 import (
 	"encoding/json"
 
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/proto"
 )
 
 // MarshalTask serializes a task with its node and result for database storage.

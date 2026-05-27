@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/claytonsingh/golib/dotaccess"
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
-	"github.com/jackadi-io/jackadi/internal/serializer"
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 func NewSpecsManager() (*SpecsManager, error) {

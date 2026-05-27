@@ -8,7 +8,7 @@
 
 # Jackadi
 
-[![Status](https://img.shields.io/badge/status-alpha-bue)](https://github.com/jackadi-io/jackadi)
+[![Status](https://img.shields.io/badge/status-alpha-bue)](https://github.com/kpetremann/jackadi)
 
 > [!WARNING]  
 > Jackadi is currently in an alpha.
@@ -86,7 +86,7 @@ jack run node1 cmd.run "echo hello"
 ```go {filename=tour.go}
 package main
 
-import "github.com/jackadi-io/jackadi/sdk"
+import "github.com/kpetremann/jackadi/sdk"
 
 func Hello(name string) (string, error) {
 	return fmt.Sprintf("Hello %s!", name), nil

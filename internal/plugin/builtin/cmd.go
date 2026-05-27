@@ -9,8 +9,8 @@ import (
 	"syscall"
 
 	"github.com/google/shlex"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 func run(ctx context.Context, args string) (string, error) {

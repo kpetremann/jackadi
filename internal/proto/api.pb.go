@@ -7,14 +7,15 @@
 package proto
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	_ "google.golang.org/protobuf/types/known/emptypb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
@@ -844,7 +845,7 @@ const file_internal_proto_api_proto_rawDesc = "" +
 	"GetResults\x12\x15.proto.ResultsRequest\x1a\x16.proto.ResultsResponse\"\x1a\x82\xd3\xe4\x93\x02\x14\x12\x12/v1/results/result\x12^\n" +
 	"\vListResults\x12\x19.proto.ListResultsRequest\x1a\x1a.proto.ListResultsResponse\"\x18\x82\xd3\xe4\x93\x02\x12\x12\x10/v1/results/list\x12X\n" +
 	"\n" +
-	"GetRequest\x12\x15.proto.RequestRequest\x1a\x16.proto.RequestResponse\"\x1b\x82\xd3\xe4\x93\x02\x15\x12\x13/v1/results/requestB.Z,github.com/jackadi-io/jackadi/internal/protob\x06proto3"
+	"GetRequest\x12\x15.proto.RequestRequest\x1a\x16.proto.RequestResponse\"\x1b\x82\xd3\xe4\x93\x02\x15\x12\x13/v1/results/requestB.Z,github.com/kpetremann/jackadi/internal/protob\x06proto3"
 
 var (
 	file_internal_proto_api_proto_rawDescOnce sync.Once

@@ -12,17 +12,17 @@ import (
 	"time"
 
 	"github.com/dgraph-io/badger/v4"
-	"github.com/jackadi-io/jackadi/internal/api"
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/manager/forwarder"
-	"github.com/jackadi-io/jackadi/internal/manager/inventory"
-	"github.com/jackadi-io/jackadi/internal/manager/management"
-	"github.com/jackadi-io/jackadi/internal/manager/server"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/api"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/manager/forwarder"
+	"github.com/kpetremann/jackadi/internal/manager/inventory"
+	"github.com/kpetremann/jackadi/internal/manager/management"
+	"github.com/kpetremann/jackadi/internal/manager/server"
+	"github.com/kpetremann/jackadi/internal/proto"
 	flag "github.com/spf13/pflag"
 	"google.golang.org/grpc"
 
-	_ "github.com/jackadi-io/jackadi/internal/logs"
+	_ "github.com/kpetremann/jackadi/internal/logs"
 )
 
 var version = "dev"

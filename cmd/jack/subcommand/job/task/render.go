@@ -8,10 +8,10 @@ import (
 
 	"github.com/goccy/go-yaml"
 
-	"github.com/jackadi-io/jackadi/cmd/jack/option"
-	"github.com/jackadi-io/jackadi/cmd/jack/style"
-	"github.com/jackadi-io/jackadi/internal/proto"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/cmd/jack/option"
+	"github.com/kpetremann/jackadi/cmd/jack/style"
+	"github.com/kpetremann/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 func printTaskResult(responses *proto.FwdResponse) {

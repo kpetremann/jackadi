@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/goccy/go-yaml"
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 type Role string

@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/jackadi-io/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/config"
 )
 
 type closeFunc func()

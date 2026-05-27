@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/proto"
 )
 
 type Plugin interface {

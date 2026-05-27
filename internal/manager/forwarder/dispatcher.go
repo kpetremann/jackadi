@@ -13,10 +13,10 @@ import (
 	"time"
 
 	"github.com/claytonsingh/golib/dotaccess"
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/manager/inventory"
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/manager/inventory"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/proto"
 )
 
 var ErrNodeNotFound = errors.New("node not found")

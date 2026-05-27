@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
 	"github.com/spf13/cobra"
 )
 

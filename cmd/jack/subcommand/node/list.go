@@ -7,11 +7,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/jackadi-io/jackadi/cmd/jack/connection"
-	"github.com/jackadi-io/jackadi/cmd/jack/option"
-	"github.com/jackadi-io/jackadi/cmd/jack/style"
-	"github.com/jackadi-io/jackadi/internal/proto"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/cmd/jack/connection"
+	"github.com/kpetremann/jackadi/cmd/jack/option"
+	"github.com/kpetremann/jackadi/cmd/jack/style"
+	"github.com/kpetremann/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/serializer"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/status"
 )

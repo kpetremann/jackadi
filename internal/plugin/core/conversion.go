@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/serializer"
 	"github.com/spf13/cast"
 )
 

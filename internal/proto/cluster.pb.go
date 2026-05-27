@@ -7,14 +7,15 @@
 package proto
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
@@ -699,7 +700,7 @@ const file_internal_proto_cluster_proto_rawDesc = "" +
 	"\bExecTask\x12\x13.proto.TaskResponse\x1a\x12.proto.TaskRequest(\x010\x01\x12I\n" +
 	"\x0fListNodePlugins\x12\x16.google.protobuf.Empty\x1a\x1e.proto.ListNodePluginsResponse2Y\n" +
 	"\tForwarder\x12L\n" +
-	"\bExecTask\x12\x12.proto.TaskRequest\x1a\x12.proto.FwdResponse\"\x18\x82\xd3\xe4\x93\x02\x12:\x01*\"\r/v1/task/execB.Z,github.com/jackadi-io/jackadi/internal/protob\x06proto3"
+	"\bExecTask\x12\x12.proto.TaskRequest\x1a\x12.proto.FwdResponse\"\x18\x82\xd3\xe4\x93\x02\x12:\x01*\"\r/v1/task/execB.Z,github.com/kpetremann/jackadi/internal/protob\x06proto3"
 
 var (
 	file_internal_proto_cluster_proto_rawDescOnce sync.Once

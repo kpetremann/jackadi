@@ -13,10 +13,10 @@ import (
 	goplugin "github.com/hashicorp/go-plugin"
 	"google.golang.org/protobuf/types/known/structpb"
 
-	"github.com/jackadi-io/jackadi/internal/parser"
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
-	"github.com/jackadi-io/jackadi/internal/proto"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/parser"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 var version = ""

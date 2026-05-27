@@ -8,7 +8,7 @@ import (
 	"log/slog"
 	"reflect"
 
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 type SpecCollector struct {

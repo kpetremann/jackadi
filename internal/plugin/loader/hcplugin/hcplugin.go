@@ -19,9 +19,9 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 	goplugin "github.com/hashicorp/go-plugin"
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
-	"github.com/jackadi-io/jackadi/internal/plugin/types"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/plugin/types"
 )
 
 var PluginMap = map[string]goplugin.Plugin{

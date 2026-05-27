@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
-	"github.com/jackadi-io/jackadi/internal/proto"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 // LockMode represents the locking behavior for task execution.

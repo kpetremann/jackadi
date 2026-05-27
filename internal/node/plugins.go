@@ -9,12 +9,12 @@ import (
 	"os"
 	"sync"
 
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/plugin/builtin"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
-	"github.com/jackadi-io/jackadi/internal/plugin/loader/hcplugin"
-	"github.com/jackadi-io/jackadi/internal/plugin/loader/stdplugin"
-	"github.com/jackadi-io/jackadi/internal/plugin/types"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/plugin/builtin"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/plugin/loader/hcplugin"
+	"github.com/kpetremann/jackadi/internal/plugin/loader/stdplugin"
+	"github.com/kpetremann/jackadi/internal/plugin/types"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

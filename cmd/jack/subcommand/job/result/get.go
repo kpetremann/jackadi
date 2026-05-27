@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jackadi-io/jackadi/cmd/jack/connection"
-	"github.com/jackadi-io/jackadi/cmd/jack/style"
-	"github.com/jackadi-io/jackadi/internal/manager/database"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/cmd/jack/connection"
+	"github.com/kpetremann/jackadi/cmd/jack/style"
+	"github.com/kpetremann/jackadi/internal/manager/database"
+	"github.com/kpetremann/jackadi/internal/proto"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/status"
 )

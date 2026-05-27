@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	badger "github.com/dgraph-io/badger/v4"
-	"github.com/jackadi-io/jackadi/internal/manager/forwarder"
-	"github.com/jackadi-io/jackadi/internal/manager/inventory"
-	"github.com/jackadi-io/jackadi/internal/manager/server"
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/manager/forwarder"
+	"github.com/kpetremann/jackadi/internal/manager/inventory"
+	"github.com/kpetremann/jackadi/internal/manager/server"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/proto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

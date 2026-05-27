@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/goccy/go-yaml"
-	"github.com/jackadi-io/jackadi/cmd/jack/style"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/cmd/jack/style"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 func prettySprint(in []byte) (string, error) {

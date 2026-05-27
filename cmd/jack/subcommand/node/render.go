@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jackadi-io/jackadi/cmd/jack/option"
-	"github.com/jackadi-io/jackadi/cmd/jack/style"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/cmd/jack/option"
+	"github.com/kpetremann/jackadi/cmd/jack/style"
+	"github.com/kpetremann/jackadi/internal/proto"
 )
 
 func sortNodeFunc(a *proto.NodeInfo, b *proto.NodeInfo) int {

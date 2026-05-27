@@ -7,14 +7,15 @@
 package protoplugin
 
 import (
-	proto "github.com/jackadi-io/jackadi/internal/proto"
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
+	proto "github.com/kpetremann/jackadi/internal/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	_ "google.golang.org/protobuf/types/known/structpb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
@@ -563,7 +564,7 @@ const file_internal_plugin_core_protoplugin_plugin_proto_rawDesc = "" +
 	"\aVersion\x12\x16.google.protobuf.Empty\x1a\x1c.protoplugin.VersionResponse\x125\n" +
 	"\x02Do\x12\x16.protoplugin.DoRequest\x1a\x17.protoplugin.DoResponse\x12I\n" +
 	"\fCollectSpecs\x12\x16.google.protobuf.Empty\x1a!.protoplugin.CollectSpecsResponse\x12V\n" +
-	"\x0fGetTaskLockMode\x12 .protoplugin.TaskLockModeRequest\x1a!.protoplugin.TaskLockModeResponseB6Z4github.com/jackadi-io/jackadi/pkg/plugin/protopluginb\x06proto3"
+	"\x0fGetTaskLockMode\x12 .protoplugin.TaskLockModeRequest\x1a!.protoplugin.TaskLockModeResponseB6Z4github.com/kpetremann/jackadi/pkg/plugin/protopluginb\x06proto3"
 
 var (
 	file_internal_plugin_core_protoplugin_plugin_proto_rawDescOnce sync.Once

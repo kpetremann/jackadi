@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jackadi-io/jackadi/cmd/jack/option"
-	"github.com/jackadi-io/jackadi/cmd/jack/subcommand/job/result"
-	"github.com/jackadi-io/jackadi/cmd/jack/subcommand/job/task"
-	"github.com/jackadi-io/jackadi/cmd/jack/subcommand/node"
-	_ "github.com/jackadi-io/jackadi/internal/plugin/builtin"
+	"github.com/kpetremann/jackadi/cmd/jack/option"
+	"github.com/kpetremann/jackadi/cmd/jack/subcommand/job/result"
+	"github.com/kpetremann/jackadi/cmd/jack/subcommand/job/task"
+	"github.com/kpetremann/jackadi/cmd/jack/subcommand/node"
+	_ "github.com/kpetremann/jackadi/internal/plugin/builtin"
 	"github.com/spf13/cobra"
 )
 

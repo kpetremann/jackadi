@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/dgraph-io/badger/v4"
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/manager/database"
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/proto"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/manager/database"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 // GetRequest searches for a request ID in the local KV store, and returns the request.

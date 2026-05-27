@@ -1,6 +1,6 @@
 package inventory
 
-import "github.com/jackadi-io/jackadi/internal/node"
+import "github.com/kpetremann/jackadi/internal/node"
 
 func (n *Nodes) GetMatchingAccepted(id node.ID, address, certificate *string) []NodeIdentity {
 	n.mutex.Lock()

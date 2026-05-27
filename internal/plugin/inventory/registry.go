@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
 )
 
 var Registry = New()

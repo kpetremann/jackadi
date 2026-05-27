@@ -3,8 +3,8 @@ package core
 import (
 	"context"
 
-	"github.com/jackadi-io/jackadi/internal/plugin/core/protoplugin"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/plugin/core/protoplugin"
+	"github.com/kpetremann/jackadi/internal/proto"
 	empty "google.golang.org/protobuf/types/known/emptypb"
 )
 

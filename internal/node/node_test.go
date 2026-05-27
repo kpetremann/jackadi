@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
-	"github.com/jackadi-io/jackadi/internal/proto"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/proto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"

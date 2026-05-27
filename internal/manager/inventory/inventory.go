@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jackadi-io/jackadi/internal/config"
-	"github.com/jackadi-io/jackadi/internal/node"
-	"github.com/jackadi-io/jackadi/internal/serializer"
+	"github.com/kpetremann/jackadi/internal/config"
+	"github.com/kpetremann/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/serializer"
 )
 
 var ErrNodeAlreadyRegistered = errors.New("node already registered")

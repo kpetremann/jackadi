@@ -2,7 +2,7 @@
 
 ## Features
 
-Before implementing and submitting any new features, please open a [GitHub Discussion](https://github.com/jackadi-io/jackadi/discussions) (or open an issue).
+Before implementing and submitting any new features, please open a [GitHub Discussion](https://github.com/kpetremann/jackadi/discussions) (or open an issue).
 
 The approach with Jackadi is to only include the essential features. Advanced features that can be achieved using another tool should use that tool (e.g. secret management, job scheduler, etc...).
 

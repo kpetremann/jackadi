@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/jackadi-io/jackadi/internal/node"
+	"github.com/kpetremann/jackadi/internal/node"
 )
 
 // TODO:

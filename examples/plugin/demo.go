@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/jackadi-io/jackadi/sdk"
+	"github.com/kpetremann/jackadi/sdk"
 )
 
 // Configuration structure for tasks that support options.

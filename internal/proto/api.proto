@@ -7,7 +7,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/timestamp.proto";
 import "internal/proto/cluster.proto";
 
-option go_package = "github.com/jackadi-io/jackadi/internal/proto";
+option go_package = "github.com/kpetremann/jackadi/internal/proto";
 
 service API {
   rpc ListNodes(ListNodesRequest) returns (ListNodesResponse) {

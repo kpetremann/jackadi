@@ -8,8 +8,8 @@ import (
 	stdplugin "plugin"
 	"strings"
 
-	"github.com/jackadi-io/jackadi/internal/plugin/core"
-	"github.com/jackadi-io/jackadi/internal/plugin/inventory"
+	"github.com/kpetremann/jackadi/internal/plugin/core"
+	"github.com/kpetremann/jackadi/internal/plugin/inventory"
 )
 
 func loadPlugin(pluginDir, file string) (core.Plugin, error) {
