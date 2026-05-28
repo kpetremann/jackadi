@@ -153,6 +153,7 @@ func targetsFromFile(file string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	defer func() { _ =  fd.Close() }
 
 	scanner := bufio.NewScanner(fd)
 	nodes := []string{}
