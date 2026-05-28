@@ -9,7 +9,7 @@ import (
 func StringToKey(key string) (Key, error) {
 	keyParts := strings.Split(key, ":")
 	if len(keyParts) != 2 {
-		return Key{}, fmt.Errorf("invalide key: %s not in 'prefix.id' format", key)
+		return Key{}, fmt.Errorf("invalid key: %s not in 'prefix.id' format", key)
 	}
 	return Key{keyParts[0], keyParts[1]}, nil
 }
