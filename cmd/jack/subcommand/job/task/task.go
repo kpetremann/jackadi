@@ -198,7 +198,7 @@ func sendTask(target string, targetMode proto.TargetMode, lockMode proto.LockMod
 
 	opts, err := structpb.NewStruct(arguments.Options)
 	if err != nil {
-		panic(err)
+		return nil, fmt.Errorf("failed to convert options to protobuf struct: %w", err)
 	}
 
 	input := proto.Input{
