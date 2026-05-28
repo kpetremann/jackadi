@@ -190,7 +190,7 @@ func StartHTTPProxy(ctx context.Context, cfg Config) error {
 
 	go func() {
 		<-ctx.Done()
-		shutdownCtx, cancel := context.WithTimeout(ctx, 10*time.Second)
+		shutdownCtx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 		defer cancel()
 		if err := httpServer.Shutdown(shutdownCtx); err != nil {
 			slog.Warn("web api failed to stop properly", "error", err)
