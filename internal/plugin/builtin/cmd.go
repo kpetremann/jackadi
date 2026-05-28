@@ -2,10 +2,12 @@ package builtin
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"log"
 	"log/slog"
 	"os/exec"
+	"strings"
 	"syscall"
 
 	"github.com/google/shlex"
@@ -14,6 +16,10 @@ import (
 )
 
 func run(ctx context.Context, args string) (string, error) {
+	if strings.TrimSpace(args) == "" {
+		return "", errors.New("args must not be empty")
+	}
+
 	partitions, err := shlex.Split(args)
 	if err != nil {
 		return "", fmt.Errorf("failed to partition: %w", err)
