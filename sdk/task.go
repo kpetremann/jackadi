@@ -309,6 +309,9 @@ func parseReturn(ret []reflect.Value) ([]byte, string, error) {
 }
 
 func handleInputs(ctx context.Context, funcType reflect.Type, input *proto.Input) ([]reflect.Value, error) {
+	if input.Args == nil {
+		return nil, errors.New("input.Args must not be empty")
+	}
 	inputs := []reflect.Value{}
 
 	// offset indicates at which position starts the args of the targeted function
