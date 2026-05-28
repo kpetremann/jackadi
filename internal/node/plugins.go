@@ -60,7 +60,10 @@ func (n *Node) KeepPluginsUpToDate(ctxMetadata context.Context, specsSync chan s
 			ret := types.PluginUpdateResponse{Changes: changes, Error: err}
 			resp <- ret
 			if changed {
-				specsSync <- struct{}{}
+				select {
+				case specsSync <- struct{}{}:
+				case <-ctxMetadata.Done(): // if StartSpecCollector has exited in the meantime
+				}
 			}
 		case <-ctxMetadata.Done():
 			return
