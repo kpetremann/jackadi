@@ -159,10 +159,10 @@ func run(cfg managerConfig) error {
 	}()
 
 	cliListener, closeCliListener, err := NewCLIListener()
-	defer closeCliListener()
 	if err != nil {
 		return err
 	}
+	defer closeCliListener()
 
 	// server CLI
 	slog.Info("starting local gRPC server for CLI")
