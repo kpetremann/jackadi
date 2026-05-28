@@ -92,7 +92,7 @@ func (n *Node) updatePlugins(ctxMetadata context.Context) ([]types.PluginChanges
 
 	// if for some reason we failed to resolve the manager address during stream connection, we fallback on the configured manager address
 	managerHost := net.JoinHostPort(n.connectedManagerAddr, n.config.PluginServerPort)
-	if managerHost == "" {
+	if n.connectedManagerAddr == "" {
 		managerHost = net.JoinHostPort(n.config.ManagerAddress, n.config.PluginServerPort)
 	}
 
