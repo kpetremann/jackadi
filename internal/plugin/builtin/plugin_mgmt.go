@@ -16,17 +16,17 @@ import (
 
 func parseNames(name string) (string, string, error) {
 	splitName := strings.Split(name, config.PluginSeparator)
-	if len(splitName) == 0 {
-		return "", "", errors.New("missing plugin or plugin.task")
+	if len(splitName) > 2 {
+		return "", "", errors.New("invalid plugin.task: too many separators")
 	}
-	pluginName := splitName[0]
 
+	pluginName := splitName[0]
 	if pluginName == "" {
 		return "", "", errors.New("missing plugin or plugin.task")
 	}
 
 	taskName := ""
-	if len(splitName) > 1 {
+	if len(splitName) == 2 {
 		taskName = splitName[1]
 	}
 

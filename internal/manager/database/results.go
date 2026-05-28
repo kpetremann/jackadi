@@ -14,9 +14,6 @@ func CutGroupPrefix(result string) (string, bool) {
 // GetFirstGroupedResultID extracts the first result ID from a grouped result value.
 func GetFirstGroupedResultID(groupedValue string) string {
 	res := strings.Split(groupedValue, ",")
-	if len(res) == 0 {
-		return groupedValue
-	}
 	return res[0]
 }
 

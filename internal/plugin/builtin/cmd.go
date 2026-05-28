@@ -16,7 +16,8 @@ import (
 )
 
 func run(ctx context.Context, args string) (string, error) {
-	if strings.TrimSpace(args) == "" {
+	args = strings.TrimSpace(args)
+	if args == "" {
 		return "", errors.New("args must not be empty")
 	}
 
