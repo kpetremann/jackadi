@@ -197,6 +197,7 @@ func handleCommand(plugin *Plugin) {
 			arguments, err := parser.ParseArgs(os.Args[4:])
 			if err != nil {
 				fmt.Printf("failed to parse arguments: %s\n", err)
+				os.Exit(1)
 			}
 
 			in, err := structpb.NewList(arguments.Positional)
