@@ -172,13 +172,14 @@ func (a *apiServer) ListResults(ctx context.Context, req *proto.ListResultsReque
 
 			var resultEntry *proto.ResultEntry
 
-			if len(val) > 8 && string(val[:8]) == "grouped:" {
+			if len(val) >= 8 && string(val[:8]) == "grouped:" {
 				resultEntry = &proto.ResultEntry{
 					Id:     id,
 					Node:   string(val),
 					Status: "success",
 				}
 				resultEntries = append(resultEntries, resultEntry)
+				count++
 				continue
 			}
 
@@ -191,6 +192,7 @@ func (a *apiServer) ListResults(ctx context.Context, req *proto.ListResultsReque
 					Status: "unknown",
 				}
 				resultEntries = append(resultEntries, resultEntry)
+				count++
 				continue
 			}
 
