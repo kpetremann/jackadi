@@ -24,7 +24,8 @@ func StructpbValueToInput(value any, targetType reflect.Type) (any, error) {
 		return ptr.Interface(), nil
 	}
 
-	switch targetType.Kind() { //nolint:exhaustive // we do not support all types
+	//nolint:exhaustive // we do not support all types
+	switch targetType.Kind() {
 	case reflect.Int:
 		return cast.ToIntE(value)
 	case reflect.Int8:

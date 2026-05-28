@@ -364,7 +364,8 @@ func (d *Dispatcher[R, A]) evaluateSpecsCondition(field, operator, value string)
 		}
 
 		// we only want to compare specs value, so we want only valid leaf.
-		switch reflect.ValueOf(specAny).Kind() { //nolint:exhaustive  // we do not support all types
+		//nolint:exhaustive  // we do not support all types
+		switch reflect.ValueOf(specAny).Kind() {
 		case reflect.Array, reflect.Chan, reflect.Func, reflect.Interface, reflect.Map,
 			reflect.Pointer, reflect.Slice, reflect.Struct, reflect.UnsafePointer:
 			slog.Debug("invalid spec", "error", "not a valid leaf", "type", reflect.ValueOf(specAny).Kind())

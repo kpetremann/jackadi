@@ -188,6 +188,7 @@ func StartHTTPProxy(ctx context.Context, cfg Config) error {
 	}
 	slog.Info("starting Web API", "address", apiAddr)
 
+	//nolint:gosec  // fresh context is needed
 	go func() {
 		<-ctx.Done()
 		shutdownCtx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
