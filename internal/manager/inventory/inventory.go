@@ -204,32 +204,38 @@ func (n *Nodes) Register(nd NodeIdentity, allowRejected bool) error {
 }
 
 func (n *Nodes) unregister(nd NodeIdentity) error {
+	// cleaning the states (ignore if not found, as in some cases in can be absent)
+	changed := false
+	for id := range n.registry.States {
+		if id == nd.ID {
+			delete(n.registry.States, id)
+			changed = true
+			break
+		}
+	}
+
+	// mandatory registry cleaning
+	found := false
 	for name, registered := range n.registry.Accepted {
 		if registered == nd {
 			delete(n.registry.Accepted, name)
-			if err := n.saveRegistryFile(); err != nil {
-				return fmt.Errorf("unable to permanently remove node: %w", err)
-			}
-			return nil
+			changed = true
+			found = true
+			break
 		}
 	}
 
-	for name := range n.registry.States {
-		if name == nd.ID {
-			delete(n.registry.States, name)
-			return nil
+	if changed {
+		if err := n.saveRegistryFile(); err != nil {
+			return fmt.Errorf("unable to permanently remove node states: %w", err)
 		}
 	}
-	return ErrNodeNotFound
-}
 
-func (n *Nodes) removeStats(id node.ID) {
-	for name := range n.registry.States {
-		if name == id {
-			delete(n.registry.States, name)
-			return
-		}
+	if !found {
+		return ErrNodeNotFound
 	}
+
+	return nil
 }
 
 func (n *Nodes) Unregister(nd NodeIdentity) error {
@@ -280,8 +286,6 @@ func (n *Nodes) Remove(nd NodeIdentity) error {
 	if rejectedIndex, isRejected := n.isRejected(nd); isRejected {
 		n.registry.Rejected = slices.Delete(n.registry.Rejected, rejectedIndex, rejectedIndex+1)
 	}
-
-	n.removeStats(nd.ID)
 
 	slog.Debug("node removed", "node", nd.ID)
 	if err := n.saveRegistryFile(); err != nil {
